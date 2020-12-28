@@ -25,7 +25,7 @@ Skoutz used to provide an [official API](https://developer.skroutz.gr/api/v3/) (
 
 In this project we periodically query the given documentation (in Postman format) to create and update a documentation in another format, with Swagger UI.
 
-The project is deployed with [Heroku](https://www.heroku.com/) and can be found online at ....
+The project is deployed with [Heroku](https://www.heroku.com/) and can be found online at http://bit.ly/swagger-skroutz.
 
 You can find Skroutz on GitHub at https://github.com/skroutz.
 
