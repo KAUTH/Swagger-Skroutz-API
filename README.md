@@ -1,3 +1,6 @@
+[![Linter](https://github.com/KAUTH/Swagger-Skroutz-API/workflows/Linter/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![GitHub license](https://img.shields.io/github/license/KAUTH/Swagger-Skroutz-API)](https://github.com/KAUTH/Swagger-Skroutz-API/blob/main/LICENSE)
+
 # Skroutz API Documentation on Swagger UI (unofficial)
 
 <p>
