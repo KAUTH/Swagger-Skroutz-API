@@ -1,0 +1,23 @@
+{
+  "name": "swagger-skroutz-api",
+  "version": "1.0.0",
+  "description": "The Skroutz API documented live with Swagger.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Konstantinos Papadopoulos",
+  "license": "ISC",
+  "dependencies": {
+    "api-spec-transformer": "^0.2.6",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "swagger-ui-express": "^4.1.6",
+    "yamljs": "^0.3.0"
+  }
+}

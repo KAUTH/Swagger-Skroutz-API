@@ -1,0 +1,1795 @@
+swagger: '2.0'
+info:
+  version: ''
+  title: apiv3
+  description: ''
+paths:
+  /categories:
+    get:
+      operationId: GET_categories
+      summary: categories_index
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/root:
+    get:
+      operationId: GET_categories-root
+      summary: categories_root
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/88:
+    get:
+      operationId: GET_categories-88
+      summary: categories_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/252/children:
+    get:
+      operationId: GET_categories-252-children
+      summary: children_api_category
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/25/manufacturers:
+    get:
+      operationId: GET_categories-25-manufacturers
+      summary: category_manufacturers
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/40/skus:
+    get:
+      operationId: GET_categories-40-skus
+      summary: /categories/40/skus
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: q
+          in: query
+          required: false
+          type: string
+          default: iphone
+        - name: 'manufacturer_ids[]'
+          in: query
+          required: false
+          type: string
+          default: '28'
+        - name: 'filter_ids[]'
+          in: query
+          required: false
+          type: string
+          default: '6282'
+        - name: include_meta
+          in: query
+          required: false
+          type: string
+          default: applied_filters
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/1442/parent:
+    get:
+      operationId: GET_categories-1442-parent
+      summary: category_parent
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/40/favorites:
+    get:
+      operationId: GET_categories-40-favorites
+      summary: category_favorites
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/40/specifications:
+    get:
+      operationId: GET_categories-40-specifications
+      summary: /categories/40/specifications
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: include
+          in: query
+          required: false
+          type: string
+          default: group
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /shops/452:
+    get:
+      operationId: GET_shops-452
+      summary: shops_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /shops/452/locations:
+    get:
+      operationId: GET_shops-452-locations
+      summary: /shops/452/locations
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: embed
+          in: query
+          required: false
+          type: string
+          default: address
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /shops/452/locations/2500:
+    get:
+      operationId: GET_shops-452-locations-2500
+      summary: /shops/452/locations/2500
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: embed
+          in: query
+          required: false
+          type: string
+          default: address
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /locations/find:
+    get:
+      operationId: GET_locations-find
+      summary: shop_locations_find
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /manufacturers/12907:
+    get:
+      operationId: GET_manufacturers-12907
+      summary: manufacturers_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /manufacturers:
+    get:
+      operationId: GET_manufacturers
+      summary: manufacturers_index
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /manufacturers/356/categories:
+    get:
+      operationId: GET_manufacturers-356-categories
+      summary: manufacturer_categories
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /manufacturers/356/skus:
+    get:
+      operationId: GET_manufacturers-356-skus
+      summary: manufacturer_skus
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /autocomplete:
+    get:
+      operationId: GET_autocomplete
+      summary: autocomplete
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: q
+          in: query
+          required: false
+          type: string
+          default: iph
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /search:
+    get:
+      operationId: GET_search
+      summary: /search
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: q
+          in: query
+          required: false
+          type: string
+          default: samsung+s7+edge+duos
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/9527729:
+    get:
+      operationId: GET_skus-9527729
+      summary: skus_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3783654/reviews:
+    get:
+      operationId: GET_skus-3783654-reviews
+      summary: skus_reviews
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+    post:
+      operationId: POST_skus-3783654-reviews
+      summary: skus_reviews_create
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3783654/reviews/new:
+    get:
+      operationId: GET_skus-3783654-reviews-new
+      summary: skus_reviews_new
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3783654/reviews/249471/edit:
+    get:
+      operationId: GET_skus-3783654-reviews-249471-edit
+      summary: skus_reviews_edit
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3783654/reviews/249474:
+    put:
+      operationId: PUT_skus-3783654-reviews-249474
+      summary: skus_reviews_update
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3783654/reviews/249471:
+    delete:
+      operationId: DELETE_skus-3783654-reviews-249471
+      summary: skus_reviews_destroy
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3783654/products:
+    get:
+      operationId: GET_skus-3783654-products
+      summary: skus_products
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3034682/similar:
+    get:
+      operationId: GET_skus-3034682-similar
+      summary: skus_similar
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3034682/price_history:
+    get:
+      operationId: GET_skus-3034682-price_history
+      summary: skus_price_history
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/8333136/favorite:
+    get:
+      operationId: GET_skus-8333136-favorite
+      summary: sku_favorite
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /books/242327:
+    get:
+      operationId: GET_books-242327
+      summary: books_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /books/242327/details:
+    get:
+      operationId: GET_books-242327-details
+      summary: books_details
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /books/242327/similar_by_author:
+    get:
+      operationId: GET_books-242327-similar_by_author
+      summary: books_similar_by_author
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /author/385:
+    get:
+      operationId: GET_author-385
+      summary: author
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /author/385/books:
+    get:
+      operationId: GET_author-385-books
+      summary: author_books
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /publisher/78:
+    get:
+      operationId: GET_publisher-78
+      summary: publisher
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /publisher/78/books:
+    get:
+      operationId: GET_publisher-78-books
+      summary: publisher_books
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /book_categories:
+    get:
+      operationId: GET_book_categories
+      summary: book_categories
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /book_categories/1857:
+    get:
+      operationId: GET_book_categories-1857
+      summary: book_categories_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /book_categories/1857/filters:
+    get:
+      operationId: GET_book_categories-1857-filters
+      summary: book_categories_filters
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /book_categories/1857/books:
+    get:
+      operationId: GET_book_categories-1857-books
+      summary: book_categories_books
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /books/search:
+    get:
+      operationId: GET_books-search
+      summary: books_search
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: q
+          in: query
+          required: false
+          type: string
+          default: harry
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /book_categories/filters:
+    get:
+      operationId: GET_book_categories-filters
+      summary: book_categories_filters_query
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: q
+          in: query
+          required: false
+          type: string
+          default: harry
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /products/29878439:
+    get:
+      operationId: GET_products-29878439
+      summary: products_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /shops/452/products/search:
+    get:
+      operationId: GET_shops-452-products-search
+      summary: products_search
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: shop_uid
+          in: query
+          required: false
+          type: string
+          default: '062276'
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /products/25809770:
+    get:
+      operationId: GET_products-25809770
+      summary: /products/25809770
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: embed
+          in: query
+          required: false
+          type: string
+          default: shop
+        - name: 'fields[root]'
+          in: query
+          required: false
+          type: string
+          default: 'id,name'
+        - name: 'fields[shop]'
+          in: query
+          required: false
+          type: string
+          default: 'id,name'
+        - name: 'fields_except[root]'
+          in: query
+          required: false
+          type: string
+          default: sizes
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /favorites:
+    get:
+      operationId: GET_favorites
+      summary: favorites_index
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+    post:
+      operationId: POST_favorites
+      summary: favorite_create
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /favorites/5896665:
+    get:
+      operationId: GET_favorites-5896665
+      summary: favorites_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /favorites/17832353:
+    put:
+      operationId: PUT_favorites-17832353
+      summary: favorite_update
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /favorite_lists:
+    get:
+      operationId: GET_favorite_lists
+      summary: favorite_lists_index
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+    post:
+      operationId: POST_favorite_lists
+      summary: favorite_list_create
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /favorite_lists/861839/favorites:
+    get:
+      operationId: GET_favorite_lists-861839-favorites
+      summary: favorite_list_favorites
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/40/filter_groups:
+    get:
+      operationId: GET_categories-40-filter_groups
+      summary: filter_groups_index
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /categories/279/skus:
+    get:
+      operationId: GET_categories-279-skus
+      summary: category_skus_with_available_filters
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: include_meta
+          in: query
+          required: false
+          type: string
+          default: available_filters
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /notifications:
+    get:
+      operationId: GET_notifications
+      summary: notifications_index
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /notifications/314233664:
+    get:
+      operationId: GET_notifications-314233664
+      summary: notifications_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /notifications/view:
+    post:
+      operationId: POST_notifications-view
+      summary: notifications_view
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3982592/reviews:
+    get:
+      operationId: GET_skus-3982592-reviews
+      summary: sku_reviews_with_rating_breakdown
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: include_meta
+          in: query
+          required: false
+          type: string
+          default: sku_rating_breakdown
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/8864706/reviews:
+    get:
+      operationId: GET_skus-8864706-reviews
+      summary: sku_reviews_with_aggregation
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: include_meta
+          in: query
+          required: false
+          type: string
+          default: sku_reviews_aggregation
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3982592/reviews/21943/votes:
+    post:
+      operationId: POST_skus-3982592-reviews-21943-votes
+      summary: sku_review_vote_create
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3982592/reviews/18689/votes:
+    post:
+      operationId: POST_skus-3982592-reviews-18689-votes
+      summary: sku_review_vote_create_embed_sku_review
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: embed
+          in: query
+          required: false
+          type: string
+          default: sku_review
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/9783213/reviews/240896/flags:
+    post:
+      operationId: POST_skus-9783213-reviews-240896-flags
+      summary: sku_review_flag_create
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/3443837/specifications:
+    get:
+      operationId: GET_skus-3443837-specifications
+      summary: sku_specifications
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /skus/2588170/specifications:
+    get:
+      operationId: GET_skus-2588170-specifications
+      summary: sku_specifications_include_group
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: include
+          in: query
+          required: false
+          type: string
+          default: group
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /shops/452/reviews:
+    get:
+      operationId: GET_shops-452-reviews
+      summary: /shops/452/reviews
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: include_meta
+          in: query
+          required: false
+          type: string
+          default: shop_rating_breakdown
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /shops/search:
+    get:
+      operationId: GET_shops-search
+      summary: shop_search
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: q
+          in: query
+          required: false
+          type: string
+          default: spartoo
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /flags:
+    get:
+      operationId: GET_flags
+      summary: flags_index
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /user:
+    get:
+      operationId: GET_user
+      summary: user
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+    patch:
+      operationId: PATCH_user
+      summary: user_update
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /user/avatars:
+    get:
+      operationId: GET_user-avatars
+      summary: user_avatars
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /user/logout:
+    delete:
+      operationId: DELETE_user-logout
+      summary: user_logout
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /user/saved_orders:
+    get:
+      operationId: GET_user-saved_orders
+      summary: user_saved_orders
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /user/addresses:
+    get:
+      operationId: GET_user-addresses
+      summary: user_addresses
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+    post:
+      operationId: POST_user-addresses
+      summary: user_addresses_create
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /user/addresses/new:
+    get:
+      operationId: GET_user-addresses-new
+      summary: user_addresses_new
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /user/addresses/48937:
+    put:
+      operationId: PUT_user-addresses-48937
+      summary: user_addresses_update
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+    delete:
+      operationId: DELETE_user-addresses-48937
+      summary: user_addresses_destroy
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+  /personalization:
+    put:
+      operationId: PUT_personalization
+      summary: personalization_update
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+    get:
+      operationId: GET_personalization
+      summary: personalization_show
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: accept
+          in: header
+          required: false
+          type: string
+          default: ' application/vnd.skroutz+json; version=3.2'
+        - name: authorization
+          in: header
+          required: false
+          type: string
+          default: ' Bearer <<oauth_token>>'
+      responses:
+        default:
+          description: ''
+          schema: {}
+definitions: {}
