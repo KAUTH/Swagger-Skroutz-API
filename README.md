@@ -36,11 +36,11 @@ First, clone the repository from GitHub (e.g. ```git clone https://github.com/KA
 
 To run this project locally you need to have [npm installed](https://www.npmjs.com/get-npm).
 
-When deploying the project for the fist time, install all the required packages by running the ```npm install``` command on a terminal in the root directory.
+When deploying the project for the first time, install all the required packages by running the ```npm install``` command on a terminal in the root directory.
 
 After that, to run the project use the ```npm start``` command.
 
-The Swagger UI API documentation will then be accesible from http://localhost:8080/api/.
+The Swagger UI API documentation will then be accessible from http://localhost:8080/api/.
 
 *Important:* There is 1 .env file (with environment variables) that our project uses, which is not on the repository for security reasons. In order for the project to run properly, you have to create your .env file in the same directory (root directory) that the .env.example file (example of how our .env file look like) is present in this repository.
 
