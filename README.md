@@ -32,7 +32,7 @@ You can find Skroutz on GitHub at https://github.com/skroutz.
 
 # Running the project
 
-First, clone the repository from GitHub (e.g. ```git clone https://github.com/KAUTH/Swagger-Skroutz-API.git```)
+First, clone the repository from GitHub (e.g. ```git clone https://github.com/KAUTH/Swagger-Skroutz-API.git```).
 
 To run this project locally you need to have [npm installed](https://www.npmjs.com/get-npm).
 
